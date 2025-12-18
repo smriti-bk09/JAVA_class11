@@ -1,11 +1,11 @@
 package day_14;
 import java.util.Scanner;
 
-public class AdvanceNumGuess {
+public class AdvanceNumGusses {
 
     int secretNumber;
 
-    AdvanceNumGuess() {
+    AdvanceNumGusses() {
         secretNumber = 50;
     }
 
@@ -14,11 +14,10 @@ public class AdvanceNumGuess {
 
         if (guess == secretNumber) {
             System.out.println("Correct! You guessed the number.");
-        } else if (guess * 2 == secretNumber) {
-            System.out.println("the number is Half of the secret number!!");
+        }
         } else if (difference == 1) {
             System.out.println("the number is Too near!");
-        } else if (difference <= 2) {
+        } else if (difference <= 387) {
             System.out.println("Near! please Try again.");
         } else if (guess < secretNumber) {
             System.out.println("this number Too low!");
@@ -27,9 +26,11 @@ public class AdvanceNumGuess {
         }
     }
 
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        AdvanceNumGuess g = new AdvanceNumGuess();
+        AdvanceNumGusses g = new AdvanceNumGusses();
         int userGuess;
 
         System.out.println("please gussing a number between 1 and 100");
