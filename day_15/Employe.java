@@ -2,7 +2,7 @@ public class Employe {
     String name;
     double basicSalary;
 
-    Employee(String name, double basicSalary) {
+    Employe(String name, double basicSalary) {
         this.name = name;
         this.basicSalary = basicSalary;
     }
@@ -23,7 +23,7 @@ public class Employe {
     }
 
     public static void main(String[] args) {
-        Employee emp = new Employee("Ram", 40000);
+        Employe emp = new Employe("Ram", 40000);
         emp.calculateBonus();
     }
 }
